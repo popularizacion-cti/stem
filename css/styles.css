@@ -12,16 +12,16 @@ header {
 .filtros { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; padding: 20px; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
 .filter-btn { 
     padding: 8px 16px; 
-    border: 1px solid #4BC1E1; 
+    border: 1px solid #185071; 
     background: white; 
-    color: #4BC1E1; 
+    color: #185071; 
     border-radius: 20px; 
     cursor: pointer; 
     transition: 0.3s; 
     font-weight: bold; 
 }
 .filter-btn:hover, .filter-btn.active { 
-    background: #4BC1E1; 
+    background: #185071; 
     color: white; 
 }
 
