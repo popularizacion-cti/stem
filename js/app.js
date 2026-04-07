@@ -41,21 +41,45 @@ function renderizarTarjetas(proyectos) {
     });
 }
 
-// Lógica de los botones de filtro
-document.querySelectorAll('.filter-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-        // Quitar clase active de todos y ponerla al clickeado
-        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        e.target.classList.add('active');
+// Lógica de los botones de filtro (Sumativos y Deseleccionables)
+const botonesFiltro = document.querySelectorAll('.filter-btn');
 
-        const filtro = e.target.getAttribute('data-filter');
-        
-        if (filtro === 'all') {
+botonesFiltro.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        const filtroClickeado = e.target.getAttribute('data-filter');
+
+        // 1. Si hace clic en "Todos"
+        if (filtroClickeado === 'all') {
+            botonesFiltro.forEach(b => b.classList.remove('active'));
+            e.target.classList.add('active');
             renderizarTarjetas(proyectosData);
-        } else {
-            // Filtrar el array basado en el atributo booleano (ej. proyecto.gratuita === true)
-            const filtrados = proyectosData.filter(p => p[filtro] === true);
-            renderizarTarjetas(filtrados);
+            return;
         }
+
+        // 2. Si hace clic en cualquier otro filtro
+        // Primero, le quitamos el estado 'active' al botón "Todos"
+        document.querySelector('.filter-btn[data-filter="all"]').classList.remove('active');
+        
+        // Alternamos (encendemos/apagamos) el botón que acaba de clickear
+        e.target.classList.toggle('active');
+
+        // 3. Recopilamos qué filtros están encendidos actualmente
+        const filtrosActivos = Array.from(document.querySelectorAll('.filter-btn.active'))
+                                    .map(b => b.getAttribute('data-filter'));
+
+        // 4. Si el usuario apagó todos los filtros, volvemos a activar "Todos"
+        if (filtrosActivos.length === 0) {
+            document.querySelector('.filter-btn[data-filter="all"]').classList.add('active');
+            renderizarTarjetas(proyectosData);
+            return;
+        }
+
+        // 5. Filtramos los datos: El proyecto debe cumplir con TODOS los filtros activos (Lógica AND)
+        const filtrados = proyectosData.filter(proyecto => {
+            // El método 'every' se asegura de que el proyecto tenga en 'true' todas las categorías seleccionadas
+            return filtrosActivos.every(filtro => proyecto[filtro] === true);
+        });
+
+        renderizarTarjetas(filtrados);
     });
 });
