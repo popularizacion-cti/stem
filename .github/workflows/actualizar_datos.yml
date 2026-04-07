@@ -1,44 +1,42 @@
 name: Actualizar Observatorio STEM
 
-# ¿Cuándo se ejecutará este robot?
 on:
   schedule:
-    # Se ejecuta automáticamente todos los días a las 00:00 UTC
     - cron: '0 0 * * *'
   workflow_dispatch:
-    # Agrega un botón en GitHub para ejecutarlo manualmente cuando quieras
+
+# ¡ESTA ES LA CLAVE PARA SOLUCIONAR EL ERROR 128!
+# Le da permiso explícito al bot para guardar archivos en tu repositorio.
+permissions:
+  contents: write
 
 jobs:
   actualizar-datos:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Copiar tu repositorio en la máquina virtual
+      # Actualizado a v4 para solucionar la advertencia
       - name: Descargar el repositorio
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      # 2. Instalar Python
+      # Actualizado a v5 para solucionar la advertencia
       - name: Configurar Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      # 3. Instalar las librerías que usa tu script
       - name: Instalar dependencias
         run: |
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4
 
-      # 4. Ejecutar tu script (Asegúrate de que la ruta coincida con la tuya)
       - name: Ejecutar el scraper
         run: python data/scraper.py
 
-      # 5. Guardar los cambios (el nuevo datos.json) y subirlos al repositorio
       - name: Commit y Push de los nuevos datos
         run: |
           git config --global user.name 'GitHub Actions Bot'
           git config --global user.email 'actions@github.com'
           git add data/datos.json
-          # Si no hay cambios, no hace nada; si los hay, los guarda
           git commit -m "Actualización automática de datos desde Google Drive" || echo "No hay cambios para actualizar"
           git push
