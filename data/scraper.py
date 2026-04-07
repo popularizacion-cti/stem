@@ -76,7 +76,7 @@ for row in reader:
     proyectos_finales.append(proyecto)
 
 # Guardar el JSON final en tu carpeta local
-with open('datos.json', 'w', encoding='utf-8') as f:
+with open('data/datos.json', 'w', encoding='utf-8') as f:
     json.dump(proyectos_finales, f, indent=4, ensure_ascii=False)
 
 print("¡Archivo datos.json generado con éxito a partir de Google Sheets!")
