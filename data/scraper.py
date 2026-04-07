@@ -50,18 +50,18 @@ reader = csv.DictReader(csv_content)
 proyectos_finales = []
 
 for row in reader:
-    url = row.get('enlace') 
+    url = row.get('Enlace') 
     if not url or not url.startswith('http'):
         continue
         
-    print(f"Procesando: {row.get('Nombre proyecto educativo')}")
+    print(f"Procesando: {row.get('Proyecto')}")
     
     metadatos = extraer_metadatos(url)
     if not metadatos:
         continue
         
     proyecto = {
-        "nombre": row.get('Nombre proyecto educativo', metadatos['titulo']),
+        "nombre": row.get('Proyecto', metadatos['titulo']),
         "url": url,
         "descripcion": metadatos['descripcion'],
         "imagen": metadatos['imagen'],
