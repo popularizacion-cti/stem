@@ -71,7 +71,7 @@ for row in reader:
         "docentes": row.get('Docentes', 'FALSE') == 'TRUE',
         "cyt": row.get('CyT', 'FALSE') == 'TRUE',
         "matematica": row.get('Matemática', 'FALSE') == 'TRUE',
-        "programacion": 'code' in url.lower() or 'programación' in metadatos['descripcion'].lower()
+        "programacion": row.get('Programación', 'FALSE') == 'TRUE',
     }
     proyectos_finales.append(proyecto)
 
