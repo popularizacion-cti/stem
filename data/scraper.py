@@ -49,29 +49,45 @@ reader = csv.DictReader(csv_content)
 
 proyectos_finales = []
 
-for row in reader:
+# for row in reader:
     url = row.get('Enlace') 
     if not url or not url.startswith('http'):
         continue
         
-    print(f"Procesando: {row.get('Proyecto')}")
-    
+    print(f"Procesando: {row.get('Nombre proyecto educativo')}")
     metadatos = extraer_metadatos(url)
     if not metadatos:
-        continue
+        metadatos = {} # Si la web falla, creamos un dicc vacío para no detener el proceso
         
+    # Mejora 2: Lógica de la imagen
+    id_recurso = row.get('No.', '0')
+    id_abreviatura = row.get('Abreviatura', '')
+    imagen_extraida = metadatos.get('imagen')
+    # Si no hay imagen en la web o devuelve un placeholder, usamos la local de la carpeta img
+    if not imagen_extraida or "via.placeholder.com" in imagen_extraida:
+        imagen_final = f"img/{id_abreviatura}.jpg"
+    else:
+        imagen_final = imagen_extraida
+
+    # Mejora 3: Descripción desde la hoja de cálculo
+    # Intentamos coger tu columna "Descripcion". Si está vacía, intentamos usar el metadato.
+    desc_hoja = row.get('Descripcion', '').strip()
+    descripcion_final = desc_hoja if desc_hoja else metadatos.get('descripcion', 'Sin descripción')
+
     proyecto = {
-        "nombre": row.get('Proyecto', metadatos['titulo']),
+        "nombre": row.get('Nombre proyecto educativo', metadatos.get('titulo', 'Sin nombre')),
         "url": url,
-        "descripcion": metadatos['descripcion'],
-        "imagen": metadatos['imagen'],
-        "idioma": metadatos['idioma'],
+        "descripcion": descripcion_final,
+        "imagen": imagen_final,
         "gratuita": row.get('Herramientas gratuitas', 'FALSE') == 'TRUE',
         "estudiantes": row.get('Estudiantes', 'FALSE') == 'TRUE',
         "docentes": row.get('Docentes', 'FALSE') == 'TRUE',
         "cyt": row.get('CyT', 'FALSE') == 'TRUE',
-        "matematica": row.get('Matemática', 'FALSE') == 'TRUE',
-        "programacion": row.get('Programación', 'FALSE') == 'TRUE',
+        "matematica": row.get('Matematica', 'FALSE') == 'TRUE',
+        "programacion": 'code' in url.lower() or 'programación' in descripcion_final.lower(),
+        # Mejora 1: Idiomas desde tus columnas
+        "espanol": row.get('Español', 'FALSE') == 'TRUE',
+        "ingles": row.get('Ingles', 'FALSE') == 'TRUE'
     }
     proyectos_finales.append(proyecto)
 
