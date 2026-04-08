@@ -30,7 +30,7 @@ function renderizarTarjetas(proyectos) {
         // Además, añadimos un onerror a la imagen por si no existe el número.jpg en tu carpeta
         const card = `
             <a href="${proyecto.url}" target="_blank" class="card">
-                <img src="${proyecto.imagen}" alt="${proyecto.nombre}" onerror="this.src='https://via.placeholder.com/300x150?text=STEM'">
+                <img src="${proyecto.imagen}" alt="${proyecto.nombre}">
                 <div class="card-body">
                     <div class="badges">${badges}</div>
                     <h3>${proyecto.nombre}</h3>
