@@ -49,7 +49,7 @@ reader = csv.DictReader(csv_content)
 
 proyectos_finales = []
 
-# for row in reader:
+for row in reader:
     url = row.get('Enlace') 
     if not url or not url.startswith('http'):
         continue
