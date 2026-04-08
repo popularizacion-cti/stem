@@ -1,8 +1,6 @@
 name: Actualizar Observatorio STEM
 
 on:
-  schedule:
-    - cron: '0 0 * * *'
   workflow_dispatch:
 
 permissions:
