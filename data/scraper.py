@@ -75,18 +75,18 @@ for row in reader:
     descripcion_final = desc_hoja if desc_hoja else metadatos.get('descripcion', 'Sin descripción')
 
     proyecto = {
-        "nombre": row.get('Nombre proyecto educativo', metadatos.get('titulo', 'Sin nombre')),
+        "nombre": row.get('Recurso', metadatos.get('titulo', 'Sin nombre')),
         "url": url,
         "descripcion": descripcion_final,
         "imagen": imagen_final,
-        "gratuita": row.get('Herramientas gratuitas', 'FALSE') == 'TRUE',
+        "gratuita": row.get('Gratuitas', 'FALSE') == 'TRUE',
         "estudiantes": row.get('Estudiantes', 'FALSE') == 'TRUE',
         "docentes": row.get('Docentes', 'FALSE') == 'TRUE',
         "cyt": row.get('CyT', 'FALSE') == 'TRUE',
         "matematica": row.get('Matematica', 'FALSE') == 'TRUE',
         "programacion": 'code' in url.lower() or 'programación' in descripcion_final.lower(),
         # Mejora 1: Idiomas desde tus columnas
-        "espanol": row.get('Español', 'FALSE') == 'TRUE',
+        "espanol": row.get('Espanol', 'FALSE') == 'TRUE',
         "ingles": row.get('Ingles', 'FALSE') == 'TRUE'
     }
     proyectos_finales.append(proyecto)
