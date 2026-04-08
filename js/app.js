@@ -13,29 +13,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function renderizarTarjetas(proyectos) {
     const contenedor = document.getElementById('contenedor-enlaces');
-    contenedor.innerHTML = ''; // Limpiar contenedor
+    contenedor.innerHTML = ''; 
 
     proyectos.forEach(proyecto => {
-        // Crear etiquetas ("badges") basadas en tus columnas del Drive
         let badges = '';
         if (proyecto.gratuita) badges += '<span class="badge gratis">Gratis</span>';
         if (proyecto.cyt) badges += '<span class="badge cyt">CyT</span>';
         if (proyecto.matematica) badges += '<span class="badge mat">Matemática</span>';
         if (proyecto.programacion) badges += '<span class="badge prog">Programación</span>';
         
-        // Etiqueta de idioma extraída del código fuente
-        badges += `<span class="badge lang">${proyecto.idioma}</span>`;
+        // Mejora 1: Etiquetas de idioma desde tus columnas
+        if (proyecto.espanol) badges += '<span class="badge lang">ES</span>';
+        if (proyecto.ingles) badges += '<span class="badge lang">EN</span>';
 
+        // Mejora 4: Convertimos todo el div en una etiqueta <a>
+        // Además, añadimos un onerror a la imagen por si no existe el número.jpg en tu carpeta
         const card = `
-            <div class="card">
-                <img src="${proyecto.imagen}" alt="${proyecto.nombre}">
+            <a href="${proyecto.url}" target="_blank" class="card">
+                <img src="${proyecto.imagen}" alt="${proyecto.nombre}" onerror="this.src='https://via.placeholder.com/300x150?text=STEM'">
                 <div class="card-body">
                     <div class="badges">${badges}</div>
                     <h3>${proyecto.nombre}</h3>
-                    <p>${proyecto.descripcion.substring(0, 100)}...</p>
-                    <a href="${proyecto.url}" target="_blank" class="btn-visitar">Explorar Recurso</a>
+                    <p class="desc-texto">${proyecto.descripcion}</p>
                 </div>
-            </div>
+            </a>
         `;
         contenedor.innerHTML += card;
     });
