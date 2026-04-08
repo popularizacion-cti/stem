@@ -33,7 +33,20 @@ header {
     width: 100%; /* Ocupará el 100% disponible respetando el padding */
     margin: auto; 
 }
-.card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease; display: flex; flex-direction: column; }
+
+a.card { 
+    text-decoration: none; 
+    color: inherit; 
+    /* Mantienes los estilos que ya tenías para .card */
+    background: white; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+    transition: transform 0.3s ease; 
+    display: flex; 
+    flex-direction: column; 
+}
+
 .card:hover { transform: translateY(-5px); }
 .card img { width: 100%; height: 160px; object-fit: cover; border-bottom: 1px solid #eee; }
 .card-body { padding: 20px; display: flex; flex-direction: column; flex-grow: 1; }
@@ -48,18 +61,3 @@ header {
 
 .card-body h3 { margin-bottom: 10px; font-size: 1.2rem; color: #002b5c; }
 .card-body p { font-size: 0.9rem; color: #666; margin-bottom: 20px; flex-grow: 1; }
-
-/* Cambiamos el fondo del botón y lo oscurecemos un poquito al pasar el mouse */
-.btn-visitar { 
-    text-align: center; 
-    background: #4BC1E1; 
-    color: white; 
-    padding: 10px; 
-    text-decoration: none; 
-    border-radius: 5px; 
-    transition: 0.3s; 
-    font-weight: bold;
-}
-.btn-visitar:hover { 
-    background: #39a3bf; /* Un tono ligeramente más oscuro para el hover */
-}
