@@ -79,13 +79,14 @@ for row in reader:
         "nombre": row.get('Recurso', metadatos.get('titulo', 'Sin nombre')),
         "url": url,
         "descripcion": descripcion_final,
+        "pais": row.get('Pais', 'FALSE') == 'TRUE',
         "imagen": imagen_final,
         "gratuita": row.get('Gratuitas', 'FALSE') == 'TRUE',
         "estudiantes": row.get('Estudiantes', 'FALSE') == 'TRUE',
         "docentes": row.get('Docentes', 'FALSE') == 'TRUE',
         "cyt": row.get('CyT', 'FALSE') == 'TRUE',
         "matematica": row.get('Matematica', 'FALSE') == 'TRUE',
-        "programacion": 'code' in url.lower() or 'programación' in descripcion_final.lower(),
+        "programacion": row.get('Programacion', 'FALSE') == 'TRUE',
         # Mejora 1: Idiomas desde tus columnas
         "espanol": row.get('Espanol', 'FALSE') == 'TRUE',
         "ingles": row.get('Ingles', 'FALSE') == 'TRUE'
