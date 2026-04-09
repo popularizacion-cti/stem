@@ -64,11 +64,13 @@ for row in reader:
     id_recurso = row.get('No.', '0')
     id_abreviatura = row.get('Abreviatura', '')
     imagen_extraida = metadatos.get('imagen')
+    imagen_cargada = f"img/{id_abreviatura}.jpg"
+    
     # Si no hay imagen en la web o devuelve un placeholder, usamos la local de la carpeta img
-    if not imagen_extraida or "via.placeholder.com" in imagen_extraida:
-        imagen_final = f"img/{id_abreviatura}.jpg"
-    else:
+    if not imagen_cargada in imagen_cargada:
         imagen_final = imagen_extraida
+    else:
+        imagen_final = imagen_cargada
 
     # Mejora 3: Descripción desde la hoja de cálculo
     # Intentamos coger tu columna "Descripcion". Si está vacía, intentamos usar el metadato.
