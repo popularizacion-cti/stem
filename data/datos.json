@@ -2,21 +2,21 @@
     {
         "nombre": "Khan Academy",
         "url": "https://es.khanacademy.org/",
-        "descripcion": "Aprende gratuitamente sobre matemÃ¡ticas, arte, programaciÃ³n, economÃ­a, fÃ­sica, quÃ­mica, biologÃ­a, medicina, finanzas, historia y mÃ¡s. Khan Academy es una organizaciÃ³n sin fines de lucro, con la misiÃ³n de proveer una educaciÃ³n gratuita de clase mundial, para cualquier persona en cualquier lugar.",
+        "descripcion": "Aprende gratuitamente sobre matemáticas, arte, programación, economía, física, química, biología, medicina, finanzas, historia y más. Khan Academy es una organización sin fines de lucro, con la misión de proveer una educación gratuita de clase mundial, para cualquier persona en cualquier lugar.",
         "imagen": "img/khan.jpg",
         "gratuita": true,
         "estudiantes": true,
         "docentes": true,
         "cyt": true,
         "matematica": true,
-        "programacion": false,
+        "programacion": true,
         "espanol": true,
         "ingles": true
     },
     {
         "nombre": "Cisco Networking Academy",
         "url": "https://www.netacad.com/es",
-        "descripcion": "Cisco Networking Academy es un programa de desarrollo de habilidades para el empleo que estÃ¡ dando forma a la fuerza laboral del futuro. Desde 1997, hemos tenido un impacto en mÃ¡s de 20 millones de estudiantes en 190 paÃ­ses.",
+        "descripcion": "Cisco Networking Academy es un programa de desarrollo de habilidades para el empleo que está dando forma a la fuerza laboral del futuro. Desde 1997, hemos tenido un impacto en más de 20 millones de estudiantes en 190 países.",
         "imagen": "img/cisco.jpg",
         "gratuita": true,
         "estudiantes": true,
@@ -30,7 +30,7 @@
     {
         "nombre": "Science Bits",
         "url": "http://www.science-bits.com/site/index.php?lang=es",
-        "descripcion": "Science Bots es una soluciÃ³n didÃ¡ctica de ciencias, con un currÃ­culo de ciencias basado en la investigaciÃ³n y diseÃ±ado para aprender comprendiendo.",
+        "descripcion": "Science Bots es una solución didáctica de ciencias, con un currículo de ciencias basado en la investigación y diseñado para aprender comprendiendo.",
         "imagen": "img/scibits.jpg",
         "gratuita": true,
         "estudiantes": true,
@@ -44,7 +44,7 @@
     {
         "nombre": "Intel Education",
         "url": "https://www.intel.la/content/www/xl/es/education/intel-education.html",
-        "descripcion": "Descubra las Ãºltimas tendencias en el futuro de la tecnologÃ­a educativa de Intel y cÃ³mo los educadores y los estudiantes usan tecnologÃ­as innovadoras para la educaciÃ³n en la actualidad.",
+        "descripcion": "Descubra las últimas tendencias en el futuro de la tecnología educativa de Intel y cómo los educadores y los estudiantes usan tecnologías innovadoras para la educación en la actualidad.",
         "imagen": "img/intel.jpg",
         "gratuita": true,
         "estudiantes": true,
@@ -58,7 +58,7 @@
     {
         "nombre": "Google for Education",
         "url": "https://edu.google.com/intl/es-419/?modal_active=none",
-        "descripcion": "Accede sin costo a herramientas educativas y en lÃ­nea para profesores y estudiantes, incluidos planes de lecciones, apps y juegos para fomentar el aprendizaje en el aula.",
+        "descripcion": "Accede sin costo a herramientas educativas y en línea para profesores y estudiantes, incluidos planes de lecciones, apps y juegos para fomentar el aprendizaje en el aula.",
         "imagen": "https://edu.google.com/images/social_image.jpg",
         "gratuita": true,
         "estudiantes": true,
@@ -72,7 +72,7 @@
     {
         "nombre": "CS for All",
         "url": "https://csforall.org/es-ES/activities/hour-of-ai",
-        "descripcion": "Descubre las actividades gratuitas de la Hora de la IA. Desde lecciones hasta proyectos prÃ¡cticos, cualquiera puede adentrarse en el aprendizaje de la IA con experiencias divertidas y accesibles.",
+        "descripcion": "Descubre las actividades gratuitas de la Hora de la IA. Desde lecciones hasta proyectos prácticos, cualquiera puede adentrarse en el aprendizaje de la IA con experiencias divertidas y accesibles.",
         "imagen": "https://contentful-images.code.org/27jkibac934d/6twVI3a8N6IoRIvwGuPMDq/c96010513f029b80a86e193b7a098135/hourofai_logo_og.jpg",
         "gratuita": true,
         "estudiantes": true,
@@ -86,7 +86,7 @@
     {
         "nombre": "Funbrain",
         "url": "https://www.funbrain.com/",
-        "descripcion": "FunBrain es un sitio de juegos educativos en lÃ­nea para niÃ±os de todas las edades (matemÃ¡ticas, gramÃ¡tica, ciencias, ortografÃ­a, historia).",
+        "descripcion": "FunBrain es un sitio de juegos educativos en línea para niños de todas las edades (matemáticas, gramática, ciencias, ortografía, historia).",
         "imagen": "img/funbrain.jpg",
         "gratuita": false,
         "estudiantes": true,
@@ -100,7 +100,7 @@
     {
         "nombre": "Exploratorium: Science Snacks",
         "url": "https://www.exploratorium.edu/snacks",
-        "descripcion": "Actividades cientÃ­ficas econÃ³micas y probadas por profesores para el aula y para los alumnos curiosos.",
+        "descripcion": "Actividades científicas económicas y probadas por profesores para el aula y para los alumnos curiosos.",
         "imagen": "img/exploratorium.jpg",
         "gratuita": true,
         "estudiantes": true,
@@ -128,7 +128,7 @@
     {
         "nombre": "E-learning for kids",
         "url": "https://www.e-learningforkids.org/es/home",
-        "descripcion": "E-learning for kids es una organizaciÃ³n sin fines de lucro que brinda educaciÃ³n primaria de calidad, gratuita y divertida, basada en un plan de estudios a todos los niÃ±os del mundo. La fundaciÃ³n se inaugurÃ³ en los EE. UU. en 2004 y en los PaÃ­ses Bajos en 2007.",
+        "descripcion": "E-learning for kids es una organización sin fines de lucro que brinda educación primaria de calidad, gratuita y divertida, basada en un plan de estudios a todos los niños del mundo. La fundación se inauguró en los EE. UU. en 2004 y en los Países Bajos en 2007.",
         "imagen": "img/elkids.jpg",
         "gratuita": true,
         "estudiantes": true,
@@ -142,7 +142,7 @@
     {
         "nombre": "The Concord Consortium",
         "url": "https://learn.concord.org/",
-        "descripcion": "ColecciÃ³n de los mejores recursos del Concord Consortium para la enseÃ±anza de ciencias, matemÃ¡ticas e ingenierÃ­a. Las colecciones seleccionadas ofrecen planes de lecciones y unidades didÃ¡cticas para tu clase, basados ââen estos recursos. Â¡Todo gratis!",
+        "descripcion": "Colección de los mejores recursos del Concord Consortium para la enseñanza de ciencias, matemáticas e ingeniería. Las colecciones seleccionadas ofrecen planes de lecciones y unidades didácticas para tu clase, basados ​​en estos recursos. ¡Todo gratis!",
         "imagen": "https://learn-resources.concord.org/images/stem-resources/stem-resource-finder.jpg",
         "gratuita": true,
         "estudiantes": false,
@@ -170,21 +170,21 @@
     {
         "nombre": "Smartick",
         "url": "https://pe.smartickmethod.com/",
-        "descripcion": "Smartick es un mÃ©todo online personalizado que se adapta al ritmo y nivel de cada niÃ±o, con programas de matemÃ¡ticas, lectura, programaciÃ³n y pensamiento crÃ­tico. DiseÃ±ado para niÃ±os, potencia sus habilidades de forma divertida y eficaz.",
+        "descripcion": "Smartick es un método online personalizado que se adapta al ritmo y nivel de cada niño, con programas de matemáticas, lectura, programación y pensamiento crítico. Diseñado para niños, potencia sus habilidades de forma divertida y eficaz.",
         "imagen": "https://www.smartick.com/images/redesSociales/imagen-fb-smartick-2.jpg",
         "gratuita": true,
         "estudiantes": true,
         "docentes": false,
         "cyt": false,
         "matematica": true,
-        "programacion": false,
+        "programacion": true,
         "espanol": true,
         "ingles": false
     },
     {
         "nombre": "PhET",
         "url": "https://phet.colorado.edu/es/",
-        "descripcion": "Fundado en 2002 por el ganador del Premio Nobel Carl Wieman, el proyecto de simulaciones interactivas de PhET de la Universidad de Colorado en Boulder crea simulaciones interactivas gratuitas de matemÃ¡ticas y ciencias. Las simulaciones de PhET se basan en investigaciÃ³n educativa extensiva e involucran a los estudiantes mediante un ambiente intuitivo y similar a un juego, en donde aprenden explorando y descubriendo.",
+        "descripcion": "Fundado en 2002 por el ganador del Premio Nobel Carl Wieman, el proyecto de simulaciones interactivas de PhET de la Universidad de Colorado en Boulder crea simulaciones interactivas gratuitas de matemáticas y ciencias. Las simulaciones de PhET se basan en investigación educativa extensiva e involucran a los estudiantes mediante un ambiente intuitivo y similar a un juego, en donde aprenden explorando y descubriendo.",
         "imagen": "https://phet.colorado.edu/images/phet-social-media-logo.png",
         "gratuita": true,
         "estudiantes": true,
@@ -196,9 +196,9 @@
         "ingles": true
     },
     {
-        "nombre": "La main Ã  la pÃ¢te",
+        "nombre": "La main à la pâte",
         "url": "https://fondation-lamap.org/en",
-        "descripcion": "La fundaciÃ³n \"La main a la pate Foundation\" brinda, a los docentes, recursos para el aula de clases y entrenamiento, para dirigiar actividades de ciencia y tecnologÃ­a en escuelas de nivel primario y secundario.",
+        "descripcion": "La fundación \"La main a la pate Foundation\" brinda, a los docentes, recursos para el aula de clases y entrenamiento, para dirigiar actividades de ciencia y tecnología en escuelas de nivel primario y secundario.",
         "imagen": "img/mainpate.jpg",
         "gratuita": true,
         "estudiantes": false,
@@ -212,7 +212,7 @@
     {
         "nombre": "Aula365",
         "url": "http://www.aula365.com/",
-        "descripcion": "Aula 365 es un portal de aprendizaje creado por Movistar con un sistema de apoyo escolar para todos los niveles y Ã¡reas educativas. Cuenta con miles de recursos interactivos para aprender jugando y promueve la inteligencia colaborativa y el pensamiento crÃ­tico de los niÃ±os.",
+        "descripcion": "Aula 365 es un portal de aprendizaje creado por Movistar con un sistema de apoyo escolar para todos los niveles y áreas educativas. Cuenta con miles de recursos interactivos para aprender jugando y promueve la inteligencia colaborativa y el pensamiento crítico de los niños.",
         "imagen": "img/aula365.jpg",
         "gratuita": true,
         "estudiantes": true,
@@ -240,7 +240,7 @@
     {
         "nombre": "Royal Society of Chemistry: Education",
         "url": "https://edu.rsc.org/",
-        "descripcion": "RSC Education inspira la enseÃ±anza y aprendizaje en QuÃ­mica. Alberga los servicios de apoyo educativo de la Royal Society of Chemistry.",
+        "descripcion": "RSC Education inspira la enseñanza y aprendizaje en Química. Alberga los servicios de apoyo educativo de la Royal Society of Chemistry.",
         "imagen": "https://d1ymz67w5raq8g.cloudfront.net/Pictures/1024x536/P/web/x/p/o/shutterstock_709801810-teacher-students-lab-classroom-model.jpg",
         "gratuita": true,
         "estudiantes": false,
@@ -254,7 +254,7 @@
     {
         "nombre": "American Chemical Society",
         "url": "https://www.acs.org/content/acs/en/education.html",
-        "descripcion": "Explora la enseÃ±anza de la quÃ­mica para el aula y mÃ¡s allÃ¡. Encuentra recursos para docentes y estudiantes, e informaciÃ³n sobre actividades de extensiÃ³n comunitaria.",
+        "descripcion": "Explora la enseñanza de la química para el aula y más allá. Encuentra recursos para docentes y estudiantes, e información sobre actividades de extensión comunitaria.",
         "imagen": "https://assetscloud.acs.org/acs-bootstrap/v2.0/images/acs-logo-facebook.png",
         "gratuita": true,
         "estudiantes": true,
@@ -282,7 +282,7 @@
     {
         "nombre": "NASA Space Place",
         "url": "https://spaceplace.nasa.gov/sp/",
-        "descripcion": "Lanzada en 1998, la misiÃ³n de NASA Space Place es inspirar y enriquecer el aprendizaje en lÃ­nea de niÃ±os de primaria sobre el espacio y la Tierra a travÃ©s de juegos divertidos, actividades prÃ¡cticas, artÃ­culos informativos y videos cortos y atractivos. Con material en inglÃ©s y espaÃ±ol, y recursos para padres y maestros, NASA Space Place tiene algo para todos.",
+        "descripcion": "Lanzada en 1998, la misión de NASA Space Place es inspirar y enriquecer el aprendizaje en línea de niños de primaria sobre el espacio y la Tierra a través de juegos divertidos, actividades prácticas, artículos informativos y videos cortos y atractivos. Con material en inglés y español, y recursos para padres y maestros, NASA Space Place tiene algo para todos.",
         "imagen": "img/nasasp.jpg",
         "gratuita": true,
         "estudiantes": true,
@@ -296,7 +296,7 @@
     {
         "nombre": "Royal Society of Biology",
         "url": "https://www.rsb.org.uk/learning-and-outreach.html",
-        "descripcion": "Descubre los recursos de aprendizaje de la Royal Society of Biology. Participa en la Semana de la BiologÃ­a o Ãºnete a un proyecto de ciencia ciudadana.",
+        "descripcion": "Descubre los recursos de aprendizaje de la Royal Society of Biology. Participa en la Semana de la Biología o únete a un proyecto de ciencia ciudadana.",
         "imagen": "https://cf.rsb.org.uk/www/img/Carousel_1_Educator-1500.jpg",
         "gratuita": true,
         "estudiantes": true,
@@ -310,7 +310,7 @@
     {
         "nombre": "American Physical Society",
         "url": "https://www.aps.org/programs/education/index.cfm",
-        "descripcion": "APS apoya a los departamentos de fÃ­sica con recursos, asÃ­ como con oportunidades para establecer contactos y desarrollar habilidades.",
+        "descripcion": "APS apoya a los departamentos de física con recursos, así como con oportunidades para establecer contactos y desarrollar habilidades.",
         "imagen": "img/aps.jpg",
         "gratuita": true,
         "estudiantes": false,
@@ -324,7 +324,7 @@
     {
         "nombre": "National Geographic Kids",
         "url": "https://www.natgeokids.com/uk/teacher-category/science/",
-        "descripcion": "National Geographic Kids ofrece una gran cantidad de recursos de ciencias para primaria para ayudar a los docentes a planificar sus clases. Son una excelente herramienta para ayudar a los estudiantes con sus proyectos y experimentos de campo. Con datos curiosos y artÃ­culos detallados sobre animales, hÃ¡bitats y ciclos de vida, ademÃ¡s de recursos fascinantes sobre el espacio, el sistema solar y la vida de un astronauta.",
+        "descripcion": "National Geographic Kids ofrece una gran cantidad de recursos de ciencias para primaria para ayudar a los docentes a planificar sus clases. Son una excelente herramienta para ayudar a los estudiantes con sus proyectos y experimentos de campo. Con datos curiosos y artículos detallados sobre animales, hábitats y ciclos de vida, además de recursos fascinantes sobre el espacio, el sistema solar y la vida de un astronauta.",
         "imagen": "img/natgeokids.jpg",
         "gratuita": true,
         "estudiantes": true,
@@ -338,7 +338,7 @@
     {
         "nombre": "Science Kids",
         "url": "http://www.sciencekids.co.nz/projects.html",
-        "descripcion": "Science Kids ofrece una amplia gama de proyectos de ferias de ciencias para niÃ±os, asÃ­ como ideas de investigaciÃ³n sobre cualquier tema de su entorno. Los estudiantes de cualquier grado de primaria y secundaria pueden disfrutar creando proyectos sobre quÃ­mica, biologÃ­a, fÃ­sica, matemÃ¡tica, entre otros. Los niÃ±os pueden seguir la lista gratuita de temas y ejemplos divertidos, usarlos como guÃ­a para futuras investigaciones.",
+        "descripcion": "Science Kids ofrece una amplia gama de proyectos de ferias de ciencias para niños, así como ideas de investigación sobre cualquier tema de su entorno. Los estudiantes de cualquier grado de primaria y secundaria pueden disfrutar creando proyectos sobre química, biología, física, matemática, entre otros. Los niños pueden seguir la lista gratuita de temas y ejemplos divertidos, usarlos como guía para futuras investigaciones.",
         "imagen": "img/sciencekids.jpg",
         "gratuita": true,
         "estudiantes": true,
@@ -366,7 +366,7 @@
     {
         "nombre": "Fisicalab",
         "url": "https://www.fisicalab.com/",
-        "descripcion": "Plataforma didÃ¡ctica e interactiva con contenidos en idioma espaÃ±ol diseÃ±ada para el aprendizaje y la enseÃ±anza de asignaturas cientÃ­ficas, como FÃ­sica o MatemÃ¡ticas. Los contenidos se encuentran estructurados en cuatro niveles: inicial, intermedio, avanzado y experto.",
+        "descripcion": "Plataforma didáctica e interactiva con contenidos en idioma español diseñada para el aprendizaje y la enseñanza de asignaturas científicas, como Física o Matemáticas. Los contenidos se encuentran estructurados en cuatro niveles: inicial, intermedio, avanzado y experto.",
         "imagen": "img/fisicalab.jpg",
         "gratuita": false,
         "estudiantes": true,
@@ -394,7 +394,7 @@
     {
         "nombre": "99math",
         "url": "https://99math.com/",
-        "descripcion": "Manera fÃ¡cil y divertida de practicar operaciones matemÃ¡ticas bÃ¡sicas en clase. Cuenta con actividades para todas la clase.",
+        "descripcion": "Manera fácil y divertida de practicar operaciones matemáticas básicas en clase. Cuenta con actividades para todas la clase.",
         "imagen": "https://99math.com/images/playing-99math.png?image",
         "gratuita": true,
         "estudiantes": true,
@@ -408,7 +408,7 @@
     {
         "nombre": "Code Monkey",
         "url": "https://www.codemonkey.com/",
-        "descripcion": "CodeMonkey es un programa de programaciÃ³n para niÃ±os. A travÃ©s de sus cursos, millones de estudiantes aprenden a programar en lenguajes de programaciÃ³n reales.",
+        "descripcion": "CodeMonkey es un programa de programación para niños. A través de sus cursos, millones de estudiantes aprenden a programar en lenguajes de programación reales.",
         "imagen": "https://s3-us-west-2.amazonaws.com/cm-wordpress-media/wp-content/uploads/2018/06/12113810/CodeMonkey-Square-Logo.png",
         "gratuita": true,
         "estudiantes": true,
@@ -422,7 +422,7 @@
     {
         "nombre": "Eduten",
         "url": "https://www.eduten.com/",
-        "descripcion": "Eduten es una plataforma digital de aprendizaje de matemÃ¡ticas que combina la excelencia educativa finlandesa con la gamificaciÃ³n y la inteligencia artificial.",
+        "descripcion": "Eduten es una plataforma digital de aprendizaje de matemáticas que combina la excelencia educativa finlandesa con la gamificación y la inteligencia artificial.",
         "imagen": "img/eduten.jpg",
         "gratuita": true,
         "estudiantes": true,
@@ -436,7 +436,7 @@
     {
         "nombre": "Fun Learning",
         "url": "https://www.funlearning.com/",
-        "descripcion": "Soluciones integrales para la educaciÃ³n infantil, recursos fÃ¡ciles de implementar y herramientas digitales innovadoras. Soluciones basadas en el enfoque de Aprendizaje Divertido. Contenido inspirador seleccionado por expertos en pedagogÃ­a. Arraigado en la reconocida experiencia educativa finlandesa. Adaptable a las culturas locales y a los objetivos curriculares.",
+        "descripcion": "Soluciones integrales para la educación infantil, recursos fáciles de implementar y herramientas digitales innovadoras. Soluciones basadas en el enfoque de Aprendizaje Divertido. Contenido inspirador seleccionado por expertos en pedagogía. Arraigado en la reconocida experiencia educativa finlandesa. Adaptable a las culturas locales y a los objetivos curriculares.",
         "imagen": "img/funlearning.jpg",
         "gratuita": true,
         "estudiantes": true,
@@ -450,7 +450,7 @@
     {
         "nombre": "Seppo",
         "url": "https://seppo.io/",
-        "descripcion": "Con Seppo, puedes diseÃ±ar experiencias de formaciÃ³n atractivas y adaptadas al futuro del aprendizaje.",
+        "descripcion": "Con Seppo, puedes diseñar experiencias de formación atractivas y adaptadas al futuro del aprendizaje.",
         "imagen": "https://seppo.io/wp-content/uploads/2025/10/Seppo_Social_Share-1.jpg",
         "gratuita": false,
         "estudiantes": true,
@@ -464,7 +464,7 @@
     {
         "nombre": "Science History Institute",
         "url": "https://www.sciencehistory.org/",
-        "descripcion": "El Instituto de Historia de la Ciencia es un museo y biblioteca gratuitos que recopilan, conservan, interpretan y comparten las historias que hay detrÃ¡s de la ciencia.",
+        "descripcion": "El Instituto de Historia de la Ciencia es un museo y biblioteca gratuitos que recopilan, conservan, interpretan y comparten las historias que hay detrás de la ciencia.",
         "imagen": "https://www.sciencehistory.org/wp-content/uploads/2023/06/building_facade_2023.jpeg",
         "gratuita": true,
         "estudiantes": true,
@@ -478,7 +478,7 @@
     {
         "nombre": "IXL",
         "url": "https://la.ixl.com/",
-        "descripcion": "IXL es la web de aprendizaje por suscripciÃ³n mÃ¡s popular del mundo. Utilizada por mÃ¡s de 18 millones de estudiantes, IXL proporciona prÃ¡ctica ilimitada en mÃ¡s de 1.000 temas de matemÃ¡ticas. Las preguntas interactivas, las recompensas y los certificados motivan a los niÃ±os mientras mejoran sus habilidades.",
+        "descripcion": "IXL es la web de aprendizaje por suscripción más popular del mundo. Utilizada por más de 18 millones de estudiantes, IXL proporciona práctica ilimitada en más de 1.000 temas de matemáticas. Las preguntas interactivas, las recompensas y los certificados motivan a los niños mientras mejoran sus habilidades.",
         "imagen": "https://la.ixl.com/dv3/powZqMuTE7du4asFrVyNGxxoqkw/yui3/opengraph/assets/general_la.png",
         "gratuita": false,
         "estudiantes": true,
@@ -492,7 +492,7 @@
     {
         "nombre": "CK-12 - Flexi Teacher",
         "url": "https://www.ck12.org/teacher/",
-        "descripcion": "DescripciÃ³n 440",
+        "descripcion": "Descripción 440",
         "imagen": "img/ck12flexi.jpg",
         "gratuita": true,
         "estudiantes": true,
@@ -506,7 +506,7 @@
     {
         "nombre": "U.S. National Science Foundation",
         "url": "https://www.nsf.gov/",
-        "descripcion": "DescripciÃ³n 451",
+        "descripcion": "Descripción 451",
         "imagen": "https://www.nsf.gov/themes/custom/nsf_theme/logo-200x200.png",
         "gratuita": true,
         "estudiantes": true,
@@ -520,7 +520,7 @@
     {
         "nombre": "Oracle Academy",
         "url": "https://academy.oracle.com/",
-        "descripcion": "DescripciÃ³n 473",
+        "descripcion": "Descripción 473",
         "imagen": "img/oracle.jpg",
         "gratuita": true,
         "estudiantes": true,
@@ -534,7 +534,7 @@
     {
         "nombre": "STEM Learning",
         "url": "https://www.stem.org.uk/",
-        "descripcion": "DescripciÃ³n 484",
+        "descripcion": "Descripción 484",
         "imagen": "img/steamlearning.jpg",
         "gratuita": true,
         "estudiantes": true,
@@ -548,7 +548,7 @@
     {
         "nombre": "Coursera",
         "url": "https://es.coursera.org/",
-        "descripcion": "DescripciÃ³n 495",
+        "descripcion": "Descripción 495",
         "imagen": "https://s3.amazonaws.com/coursera/media/Grid_Coursera_Partners_updated.png",
         "gratuita": true,
         "estudiantes": true,
@@ -562,7 +562,7 @@
     {
         "nombre": "STEMpedia",
         "url": "https://thestempedia.com/",
-        "descripcion": "DescripciÃ³n 517",
+        "descripcion": "Descripción 517",
         "imagen": "https://thestempedia.com/wp-content/uploads/2023/06/Quarky-Ecosystem.jpg",
         "gratuita": false,
         "estudiantes": true,
@@ -576,7 +576,7 @@
     {
         "nombre": "STEM MINDS",
         "url": "https://stemminds.com/smoa/",
-        "descripcion": "DescripciÃ³n 528",
+        "descripcion": "Descripción 528",
         "imagen": "https://www.stemminds.com/wp-content/uploads/2016/04/stem-facebook-image.jpg",
         "gratuita": false,
         "estudiantes": true,
@@ -588,9 +588,9 @@
         "ingles": true
     },
     {
-        "nombre": "FundaciÃ³n Internacional Siemens Stiftung",
+        "nombre": "Fundación Internacional Siemens Stiftung",
         "url": "https://crea-portaldemedios.siemens-stiftung.org/home",
-        "descripcion": "En este portal de recursos educativos abiertos docentes encontrarÃ¡n mÃ¡s de mil materiales didÃ¡cticos gratuitos y de libre acceso para la enseÃ±anza de las asignaturas STEM - ciencia, tecnologÃ­a, ingenierÃ­a, matemÃ¡ticas y otras relacionadas. Un espacio que nace de la colaboraciÃ³n de instituciones miembros de la Red STEM LatinoamÃ©rica para aportar los nuevos contextos educativos y conectividad que enfrenta la enseÃ±anza.",
+        "descripcion": "En este portal de recursos educativos abiertos docentes encontrarán más de mil materiales didácticos gratuitos y de libre acceso para la enseñanza de las asignaturas STEM - ciencia, tecnología, ingeniería, matemáticas y otras relacionadas. Un espacio que nace de la colaboración de instituciones miembros de la Red STEM Latinoamérica para aportar los nuevos contextos educativos y conectividad que enfrenta la enseñanza.",
         "imagen": "img/siemens.jpg",
         "gratuita": true,
         "estudiantes": true,
@@ -604,7 +604,7 @@
     {
         "nombre": "Instituto APOYO",
         "url": "https://institutoapoyo.org.pe/recursos-educativos-abiertos/",
-        "descripcion": "DescripciÃ³n 539",
+        "descripcion": "Descripción 539",
         "imagen": "img/apoyo.jpg",
         "gratuita": true,
         "estudiantes": false,
@@ -618,7 +618,7 @@
     {
         "nombre": "Stellarium",
         "url": "https://stellarium-web.org/",
-        "descripcion": "Stellarium Web es un planetario en lÃ­nea que se ejecuta en su navegador web y estÃ¡ basado en el proyecto web de cÃ³digo abierto Stellarium.",
+        "descripcion": "Stellarium Web es un planetario en línea que se ejecuta en su navegador web y está basado en el proyecto web de código abierto Stellarium.",
         "imagen": "img/stellarium.jpg",
         "gratuita": true,
         "estudiantes": true,
@@ -632,7 +632,7 @@
     {
         "nombre": "European Space Agency",
         "url": "https://www.esa.int/kids/es/Home",
-        "descripcion": "La Agencia Espacial Europea pone a disposiciÃ³n esta pÃ¡gina con excelentes recursos educativos orientados a menores. TambiÃ©n cuenta con juegos y material para que docentes ocupen en su horario de clases.",
+        "descripcion": "La Agencia Espacial Europea pone a disposición esta página con excelentes recursos educativos orientados a menores. También cuenta con juegos y material para que docentes ocupen en su horario de clases.",
         "imagen": "img/esakids.jpg",
         "gratuita": true,
         "estudiantes": true,
@@ -646,7 +646,7 @@
     {
         "nombre": "Harvard University",
         "url": "https://pll.harvard.edu/catalog/free",
-        "descripcion": "Navega por los cursos mÃ¡s recientes de la Universidad de Harvard",
+        "descripcion": "Navega por los cursos más recientes de la Universidad de Harvard",
         "imagen": "img/harvard.jpg",
         "gratuita": true,
         "estudiantes": true,
@@ -660,7 +660,7 @@
     {
         "nombre": "edX",
         "url": "https://www.edx.org/",
-        "descripcion": "Encuentra la ruta de aprendizaje en lÃ­nea ideal para ti, impartida por instituciones de renombre mundial como Harvard, Google, Amazon y muchas mÃ¡s.",
+        "descripcion": "Encuentra la ruta de aprendizaje en línea ideal para ti, impartida por instituciones de renombre mundial como Harvard, Google, Amazon y muchas más.",
         "imagen": "img/edx.jpg",
         "gratuita": true,
         "estudiantes": true,
@@ -674,7 +674,7 @@
     {
         "nombre": "Minecraft Education",
         "url": "https://education.minecraft.net/en-us",
-        "descripcion": "Minecraft Education Edition es una versiÃ³n de Minecraft diseÃ±ada para el aprendizaje. Permite a los estudiantes producir mundos virtuales para explorar y aprender sobre STEM. La aplicaciÃ³n ofrece una variedad de recursos educativos para ayudar a los estudiantes a aprender sobre ciencia, tecnologÃ­a, ingenierÃ­a y matemÃ¡ticas.",
+        "descripcion": "Minecraft Education Edition es una versión de Minecraft diseñada para el aprendizaje. Permite a los estudiantes producir mundos virtuales para explorar y aprender sobre STEM. La aplicación ofrece una variedad de recursos educativos para ayudar a los estudiantes a aprender sobre ciencia, tecnología, ingeniería y matemáticas.",
         "imagen": "https://education.minecraft.net/content/dam/education-edition/icons/AppList.targetsize-64_altform-lightunplated.png",
         "gratuita": false,
         "estudiantes": true,
@@ -688,7 +688,7 @@
     {
         "nombre": "STEM.gov",
         "url": "https://www.ed.gov/",
-        "descripcion": "STEM.gov es un sitio web del gobierno federal de los Estados Unidos que ofrece recursos y oportunidades para este tipo de educaciÃ³n. Incluye informaciÃ³n sobre programas y subvenciones STEM, asÃ­ como recursos educativos para estudiantes y maestros.",
+        "descripcion": "STEM.gov es un sitio web del gobierno federal de los Estados Unidos que ofrece recursos y oportunidades para este tipo de educación. Incluye información sobre programas y subvenciones STEM, así como recursos educativos para estudiantes y maestros.",
         "imagen": "http://www.ed.gov/themes/custom/edgov/images/ed-og.png",
         "gratuita": true,
         "estudiantes": true,
@@ -702,7 +702,7 @@
     {
         "nombre": "IEEE: Try Engineering",
         "url": "https://tryengineering.org/",
-        "descripcion": "IEEE TryEngineering es un sitio web de la InstituciÃ³n de Ingenieros ElÃ©ctricos y ElectrÃ³nicos (IEEE) que ofrece recursos educativos para estudiantes de todas las edades. El sitio web incluye lecciones, actividades, juegos y proyectos diversos temas STEM.",
+        "descripcion": "IEEE TryEngineering es un sitio web de la Institución de Ingenieros Eléctricos y Electrónicos (IEEE) que ofrece recursos educativos para estudiantes de todas las edades. El sitio web incluye lecciones, actividades, juegos y proyectos diversos temas STEM.",
         "imagen": "https://tryengineering.org/wp-content/uploads/logo-dsktp-ieee-tryengineering2x.png",
         "gratuita": true,
         "estudiantes": true,
