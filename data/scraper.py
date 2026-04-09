@@ -22,7 +22,7 @@ def extraer_metadatos(url):
             "idioma": idioma.split('-')[0].upper(),
             "titulo": titulo.get("content") if titulo and titulo.name == "meta" else (titulo.string if titulo else "Sin título"),
             "descripcion": descripcion.get("content") if descripcion else "Sin descripción",
-            "imagen": imagen.get("content") if imagen else "https://via.placeholder.com/300x150?text=STEM"
+            "imagen": imagen.get("content") if imagen else "https://placehold.co/300x150?text=Repositorio+Educativo+CTI"
         }
     except Exception as e:
         print(f"Error accediendo a {url}: {e}")
