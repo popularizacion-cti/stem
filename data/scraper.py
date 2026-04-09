@@ -38,6 +38,7 @@ print("Descargando datos directamente desde Google Sheets...")
 
 try:
     response_sheet = requests.get(url_google_sheet)
+    response_sheet.encoding = 'utf-8' # <-- AÑADE ESTA LÍNEA AQUÍ
     response_sheet.raise_for_status() # Lanza un error si la descarga falla
 except requests.exceptions.RequestException as e:
     print(f"Error al descargar la hoja de cálculo. Verifica que sea pública y el ID sea correcto. Detalle: {e}")
