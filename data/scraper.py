@@ -3,6 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import io
+import os
 
 def extraer_metadatos(url):
     try:
@@ -63,14 +64,19 @@ for row in reader:
     # Mejora 2: Lógica de la imagen
     id_recurso = row.get('No.', '0')
     id_abreviatura = row.get('Abreviatura', '')
-    imagen_extraida = metadatos.get('imagen')
     imagen_cargada = f"img/{id_abreviatura}.jpg"
+    imagen_extraida = metadatos.get('imagen')
     
-    # Si no hay imagen en la web o devuelve un placeholder, usamos la local de la carpeta img
-    if not imagen_cargada in imagen_cargada:
-        imagen_final = imagen_extraida
+    # Verificamos si el archivo de imagen existe físicamente en la carpeta 'img'
+    if os.path.isfile(imagen_cargada):
+        imagen_final = imagen_cargada  # Si existe, le damos prioridad a la local
     else:
-        imagen_final = imagen_cargada
+        # Si no existe localmente, comprobamos si la web nos dio una imagen válida
+        if imagen_extraida in imagen_extraida:
+            imagen_final = imagen_extraida
+        else:
+            # Si no hay imagen local NI en la web, usamos una genérica de la nube
+            imagen_final = "https://placehold.co/300x150?text=Repositorio+Educativo+CTI"
 
     # Mejora 3: Descripción desde la hoja de cálculo
     # Intentamos coger tu columna "Descripcion". Si está vacía, intentamos usar el metadato.
