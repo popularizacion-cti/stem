@@ -334,7 +334,7 @@
         "url": "https://pll.harvard.edu/catalog/free",
         "descripcion": "Navega por los cursos más recientes de la Universidad de Harvard",
         "pais": false,
-        "imagen": "https://placehold.co/300x150?text=Repositorio+Educativo+CTI",
+        "imagen": "img/harvard.jpg",
         "gratuita": true,
         "estudiantes": true,
         "docentes": true,
